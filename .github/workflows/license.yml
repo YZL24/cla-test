@@ -7,7 +7,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: apache/skywalking-eyes@0.3.0
+    - name: License Eye
+      uses: apache/skywalking-eyes@v0.3.0
       with:
           config: .github/licenserc.yaml
           # mode: # optional: Which mode License-Eye should be run in. Choices are `check` or `fix`. The default value is `check`.
