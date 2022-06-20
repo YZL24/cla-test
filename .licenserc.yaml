@@ -3,8 +3,12 @@ header:
     spdx-id: Apache-2.0
     copyright-owner: FeatureProbe
 
+  paths:
+    - '**'
+
   paths-ignore:
     - '**/*.md'
     - 'LICENSE'
+    - '.github/**'
 
   comment: on-failure
