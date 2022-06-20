@@ -18,6 +18,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       # with:
           # log: debug # optional: set the log level. The default value is `info`.
-          # config: .licenserc.yaml # optional: set the config file. The default value is `.licenserc.yaml`.
+          config: .github/licenserc.yaml # optional: set the config file. The default value is `.licenserc.yaml`.
           # token: # optional: the token that license eye uses when it needs to comment on the pull request. Set to empty ("") to disable commenting on pull request. The default value is ${{ github.token }}
           # mode: # optional: Which mode License-Eye should be run in. Choices are `check` or `fix`. The default value is `check`.
