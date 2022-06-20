@@ -1,14 +1,21 @@
 name: Check license header
 
-on: [push, pull_request]
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+      - master
 
 jobs:
-  build:
+  check:
     runs-on: ubuntu-latest
 
     steps:
     - name: Check License Header
       uses: apache/skywalking-eyes@main      # always prefer to use a revision instead of `main`.
+      env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       # with:
           # log: debug # optional: set the log level. The default value is `info`.
           # config: .licenserc.yaml # optional: set the config file. The default value is `.licenserc.yaml`.
