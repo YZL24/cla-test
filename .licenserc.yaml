@@ -4,7 +4,8 @@ header:
     copyright-owner: FeatureProbe
 
   paths:
-    - '**'
+    - 'featureprobe/**/*.py'
+    - 'tests/**/*.py'
 
   paths-ignore:
     - '**/*.md'
